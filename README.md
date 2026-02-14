@@ -1,6 +1,9 @@
 # Rock–Paper–Scissors (Console Version)
 This project is a simple JavaScript implementation of the classic Rock–Paper–Scissors game. The player competes against the computer in a 5‑round match, with results displayed directly in the browser console.
 
+### DEMO
+Play here: https://itcantbesohard.github.io/odin-rockPaperScissors/
+
 ## How It Works
 - The game runs automatically when the script loads (playGame()).
 - Each round:
