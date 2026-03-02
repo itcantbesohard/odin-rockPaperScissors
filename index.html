@@ -4,13 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
 
-</body>
+    <div class="container">
+        <header class="header">
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        <section class="scoreboard">
+            <p id="round-number">Round: 0</p>
+            <div class="round-scores">
+                <div id="player-score" class="score">Player: 0</div>
+                <div id="computer-score" class=" score">Computer: 0</div>
+            </div>
+        </section>
+        <section class="choices">
+            <button id="rock" class="btn-choice" type="button">Rock</button>
+            <button id="paper" class="btn-choice" type="button">Paper</button>
+            <button id="scissors" class="btn-choice" type="button">Scissors</button>
+        </section>
+        <section class="result">
+            <p>Select your hand!</p>
+            <br>
+            <button id="play-again" class="btn-choice" type="button">Play again</button>
+        </section>
+    </div>
 
-<script src="script.js"></script>
+</body>
 
 </html>
