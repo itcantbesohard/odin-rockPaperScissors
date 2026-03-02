@@ -10,7 +10,6 @@ function playGame() {
     renderScores(playerScore, computerScore);
     renderResult("Choose your weapon to start!");
 
-
     const choicesEl = document.querySelector(".choices");
     const resetBtn = document.querySelector("#play-again");
 
@@ -67,8 +66,6 @@ function playGame() {
     }
 }
 
-
-
 function renderResult(text) {
     const resultEl = document.querySelector(".result p");
     if (!resultEl) return;
@@ -117,7 +114,6 @@ function validateChoice(input) {
     if (input === 3) return "scissors"
     return null
 }
-
 
 /**
  * @returns {"win"|"lose"|"draw"}
