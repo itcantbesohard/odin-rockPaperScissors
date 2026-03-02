@@ -12,7 +12,6 @@ function playGame() {
 
 
     const choicesEl = document.querySelector(".choices");
-    const choiceButtons = choicesEl.querySelectorAll(".btn-choice");
     const resetBtn = document.querySelector("#play-again");
 
     choicesEl.addEventListener("click", onChoiceClick);
@@ -43,15 +42,13 @@ function playGame() {
 
     function endGame() {
 
-        choicesEl.removeEventListener("click", onChoiceClick);
-        choiceButtons.forEach(btn => btn.disabled = true);
-
         const finalMsg =
             playerScore > computerScore
                 ? "You win the game!"
                 : "You lose the game!";
         renderResult(`${finalMsg} Final score: ${playerScore} : ${computerScore}`);
 
+        choicesEl.style.display = "none";
         resetBtn.style.display = "inline-block";
 
     }
@@ -65,9 +62,7 @@ function playGame() {
         renderScores(playerScore, computerScore);
         renderResult("Choose your weapon to start!");
 
-        choiceButtons.forEach((btn) => (btn.disabled = false));
-        choicesEl.addEventListener("click", onChoiceClick);
-
+        choicesEl.style.display = "";
         resetBtn.style.display = "none";
     }
 }
