@@ -10,22 +10,30 @@
 </head>
 
 <body>
+
     <div class="container">
         <header class="header">
             <h1>Rock Paper Scissors</h1>
         </header>
-        <section class="game-controls">
-            <h2>Select your hand:</h2>
-            <div class="button-group">
-                <button id="rock" class="btn btn--rock" type="button">Rock</button>
-                <button id="paper" class="btn btn--paper" type="button">Paper</button>
-                <button id="scissors" class="btn btn--scissors" type="button">Scissors</button>
+        <section class="scoreboard">
+            <p id="round-number">Round: 0</p>
+            <div class="round-scores">
+                <div id="player-score" class="score">Player: 0</div>
+                <div id="computer-score" class=" score">Computer: 0</div>
             </div>
         </section>
-        <section class="score-display">
-            <p id="score"></p>
+        <section class="choices">
+            <button id="rock" class="btn-choice" type="button">Rock</button>
+            <button id="paper" class="btn-choice" type="button">Paper</button>
+            <button id="scissors" class="btn-choice" type="button">Scissors</button>
+        </section>
+        <section class="result">
+            <p>Select your hand!</p>
+            <br>
+            <button id="play-again" class="btn-choice" type="button">Play again</button>
         </section>
     </div>
+
 </body>
 
 </html>
