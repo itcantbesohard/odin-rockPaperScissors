@@ -1,25 +1,36 @@
-# Rock–Paper–Scissors (Console Version)
-This project is a simple JavaScript implementation of the classic Rock–Paper–Scissors game. The player competes against the computer in a 5‑round match, with results displayed directly in the browser console.
+# Rock–Paper–Scissors (Browser UI Version)
+An interactive browser‑based version of the classic Rock–Paper–Scissors game, built in JavaScript.
+The player selects a move via UI buttons, and the game displays round results, scores, and the final winner directly in the interface.
+
+### Screenshot
+<img width="1061" height="608" alt="image" src="https://github.com/user-attachments/assets/30569531-8b0a-40c5-9dc8-8c225ec92445" />
 
 ### DEMO
 Play here: https://itcantbesohard.github.io/odin-rockPaperScissors/
 
 ## How It Works
-- The game runs automatically when the script loads (playGame()).
-- Each round:
-- The player enters a choice: 1‑Rock, 2‑Paper, 3‑Scissors (or types the word).
+- The game initializes automatically when the page loads (playGame()).
+- The player chooses Rock, Paper, or Scissors via buttons.
 - The computer randomly selects its move.
-- The winner of the round is determined and scores are updated.
-- After 5 rounds, the final result is shown in the console.
+- The outcome of each round is shown in the Result section.
+- Scores and round number update dynamically.
+- The game ends when either the player or the computer reaches 5 points.
+- After the game ends:
+  - the choice buttons are hidden,
+  - a final message is displayed,
+  - a Play Again button appears to restart the game.
 
 ## Features
-- Input validation for both numbers and text.
-- Randomized computer choices.
-- Clear round‑by‑round feedback.
-- Final score summary after all rounds.
+- Clean, intuitive browser UI
+- Dynamic round and score updates
+- Detailed feedback after each round
+- Final game summary with win/lose message
+- One‑click game reset
+- Well‑structured JS with event‑based state management
 
 ## How to Play
-- Open the project in a browser.
-- Open the Console (F12 → Console tab).
-- Follow the prompts and enter your choices.
-- Watch the results appear in the console.
+1. Open the project in your browser.
+2. Click one of the options: Rock, Paper, or Scissors.
+3. Watch the round result and updated scores.
+4. First to 5 points wins the game.
+5. Click Play Again to restart.
